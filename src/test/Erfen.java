@@ -1,6 +1,6 @@
 package test;
 /*
-    二分查询
+    二分查询改
  */
 public class Erfen {
 
