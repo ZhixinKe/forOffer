@@ -47,11 +47,11 @@ class TreeNode{
     }
 
 
-    public static void main(String args[]){
+/*    public static void main(String args[]){
         int []preorder = {3,9,8,5,2,20,15,7};
         int []inorder = {5,8,9,2,3,15,20,7};
         Solution07 s = new Solution07();
         s.buildTree(preorder,inorder);
-    }
+    }*/
 
 }
