@@ -9,12 +9,14 @@ public class Solution {
     }
 
     public static  double power(double x, int n) {
+        //递归的终止条件
         if(n == 0){
             return 1;
         }
-
+        //保存结果
         double res = power(x,n/2);
 
+        //判断n的正负，当n为奇数时，需要多乘一个底数
         if((n & 1)== 0){
             return res * res ;
         }else{
