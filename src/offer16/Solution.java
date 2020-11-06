@@ -1,6 +1,7 @@
 package offer16;
 
 public class Solution {
+    //递归
     public static double myPow(double x,int n){
         if(n < 0){
             return power(1/x,-n);
@@ -24,8 +25,32 @@ public class Solution {
         }
     }
 
+    /*
+
+     */
+
+    //非递归
+    public static double myPow2(double x,int n){
+        long b = n;
+        if(b < 0){
+            b = -b;
+            x = 1/x;
+        }
+        double res = 1.0;
+        while(b > 0){
+            if((b & 1)==1){
+               res *= x;
+            }
+            x *= x;
+            b = b>>1;
+        }
+        return res;
+
+    }
+
     public static void main(String[] args) {
-        System.out.println(myPow(3,4));
+       // System.out.println(myPow(3,4));
+        System.out.println(myPow2(3.0,4));
 
     }
 
