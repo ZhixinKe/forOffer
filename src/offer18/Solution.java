@@ -44,5 +44,16 @@ public class Solution {
 
     }
 
+    //递归
+    public ListNode deleteNode3 (ListNode head,int val){
+        if(head == null) return null;
+        if(head.val == val) return head.next;
+        head.next = deleteNode3(head.next,val);
+        return head;
+
+    }
+
+
+
 
 }
