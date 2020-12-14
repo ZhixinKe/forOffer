@@ -22,6 +22,7 @@ public class Solution6 {
         for (int i=0;i<length;i++){
             result[i] = stack.pop();
         }
+
         return result;
     }
 
