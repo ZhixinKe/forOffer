@@ -22,6 +22,6 @@ class TreeNode{
 
 public class Soluction {
     public boolean isSubStructure(TreeNode A, TreeNode B) {
-
+        return false;
     }
 }
